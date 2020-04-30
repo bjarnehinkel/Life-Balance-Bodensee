@@ -1,9 +1,30 @@
 <div class="navbar">
   <div class="navbar-inner">
-    <%= image_tag('logo.png') %>
-  </div>
-  <div class="navbar-outer">
-    <div class="fade-down">
+    <div class="logo">
+      <%= image_tag('logo.png') %>
+    </div>
+    <%= link_to root_path do %>
+      <div class="nav-element active" data-page-link="home">
+        <p>Home</p>
+      </div>
+    <% end %>
+    <div class="nav-element" data-page-link="programm">
+      <p>Angebot</p>
+    </div>
+    <div class="nav-element" data-page-link="ueber-mich">
+      <p>Über Mich</p>
+    </div>
+    <%= link_to kontakt_path do %>
+      <div class="nav-element" data-page-link="kontakt">
+        <p>Kontakt</p>
+      </div>
+    <% end %>
+    <div class="nav-element last" data-page-link="achtsames">
+      <p>Kurspläne</p>
     </div>
   </div>
+  <!-- <div class="navbar-outer">
+    <div class="fade-down">
+    </div>
+  </div> -->
 </div>

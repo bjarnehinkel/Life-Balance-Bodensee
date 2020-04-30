@@ -4,15 +4,24 @@
   background-color: transparent;
   width: 100vw;
   padding: 0;
+  opacity: 0.9;
 }
 
 .navbar-inner{
-  display: inline-block;
+  display: flex;
+  align-items: center;
   width: 100%;
   background-color: white;
+  padding: 0 20px 0 20px;
   img{
-    width: 150px;
+    width: 125px;
     height: auto;
+  }
+  a{
+    color: black;
+  }
+  .logo{
+    flex-grow: 1;
   }
 }
 
@@ -24,4 +33,19 @@
   height: 25px;
   width: 100%;
   background: linear-gradient(180deg, rgba(255,255,255,1), rgba(255,255,255,0));
+}
+
+.nav-element{
+  padding: 10px;
+  border-left: 1px solid $logo-blue;
+  height: 100%;
+  p{
+    margin: 0;
+  }
+  &.last{
+    border-right: 1px solid $logo-blue;
+  }
+  &.active{
+    font-weight: bold;
+  }
 }
