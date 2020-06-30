@@ -16,6 +16,7 @@
   img{
     width: 125px;
     height: auto;
+    padding: 5px 0;
   }
   a{
     color: black;
@@ -23,16 +24,6 @@
   .logo{
     flex-grow: 1;
   }
-}
-
-.navbar-outer{
-  width: 100%;
-}
-
-.fade-down{
-  height: 25px;
-  width: 100%;
-  background: linear-gradient(180deg, rgba(255,255,255,1), rgba(255,255,255,0));
 }
 
 .nav-element{

@@ -3,7 +3,18 @@
     <div class="logo">
       <%= image_tag('logo.png') %>
     </div>
-    <%= link_to root_path do %>
+    <div class="dropdown">
+      <a class="dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+        <i class="fas fa-bars"></i>
+      </a>
+
+      <div class="dropdown-menu dropdown-menu-left" aria-labelledby="dropdownMenuLink">
+        <a class="dropdown-item" href="#">Action</a>
+        <a class="dropdown-item" href="#">Another action</a>
+        <a class="dropdown-item" href="#">Something else here</a>
+      </div>
+    </div>
+<!--     <%= link_to root_path do %>
       <div class="nav-element active" data-page-link="home">
         <p>Home</p>
       </div>
@@ -21,10 +32,6 @@
     <% end %>
     <div class="nav-element last" data-page-link="achtsames">
       <p>Kurspläne</p>
-    </div>
+    </div> -->
   </div>
-  <!-- <div class="navbar-outer">
-    <div class="fade-down">
-    </div>
-  </div> -->
 </div>
